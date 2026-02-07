@@ -15,10 +15,6 @@ public class EnrollmentRepository {
 
     // Find an enrollment by ID
     public List<Enrollment> findById(Integer id) {
-//        return enrollments.stream()
-//                .filter(enrollment -> enrollment.getId().equals(id))
-//                .findFirst()
-//                .orElse(null);
 
         return enrollments.stream()
                 .filter(enrollment -> enrollment.getStudentId().equals(id))
